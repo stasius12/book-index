@@ -1,6 +1,6 @@
 # Book Index Kata
 
-[[TOC]]
+[[_TOC_]]
 
 ## Goal
 
@@ -48,15 +48,11 @@ this CLI executes `do_it(stream, format)` function from `book_index/index.py`
 
 ### Tests
 
-we have a pytest environment:
+we have a pytest environment (you need a [pytest installed](https://docs.pytest.org/en/stable/getting-started.html#install-pytest)):
 
 ```
-pytest tests
+python3 -m pytest
 ```
-
-### Install
-
-TODO
 
 ## Proposed steps to achieve the goal
 
