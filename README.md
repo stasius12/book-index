@@ -4,7 +4,7 @@
 
 ## Goal
 
-Your goal is create an index of words in proposed format:
+Your goal is to create an index of words in proposed format:
 
 ```
 Word             Row,Col
@@ -13,19 +13,19 @@ AnotherWord      Row,Col; Row,Col
 
 ## Example
 
-In example, if you have a text:
+Following text:
 
 ```
 Foo bar
 bar test
 ```
 
-Then your program should return:
+Should produce output like this:
 
 ```
 Foo     1,1
-Bar     1,5; 2,1
-Test    2,5
+bar     1,5; 2,1
+test    2,5
 ```
 
 ## What we have
