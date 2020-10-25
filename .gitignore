@@ -1,3 +1,6 @@
 *.pyc
-venv
+book_index_venv
 __pycache__
+dist
+build
+book_index.egg*

@@ -54,6 +54,34 @@ we have a pytest environment (you need a [pytest installed](https://docs.pytest.
 python3 -m pytest
 ```
 
+## How to start
+
+You may use either `poetry` or `venv`.
+
+### VENV
+
+It is preinstalled with Python3.
+
+```shell
+> python3 -m venv book_index_venv
+> source book_index_venv/bin/activate
+> pip install -r requirements.txt
+> python setup.py install
+> pytest
+```
+
+### Poetry
+
+Needs to be installed, isntructions here https://python-poetry.org/docs/#installation
+
+Then you can
+```
+> poetry install
+> poetry shell
+> pytest
+```
+
+
 ## Proposed steps to achieve the goal
 
 1. Make a list of words from text
