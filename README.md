@@ -4,7 +4,7 @@
 
 ## Goal
 
-Your goal is create an index of words in proposed format:
+Your goal is to create an index of words in proposed format:
 
 ```
 Word             Row,Col
@@ -13,19 +13,19 @@ AnotherWord      Row,Col; Row,Col
 
 ## Example
 
-In example, if you have a text:
+Following text:
 
 ```
 Foo bar
 bar test
 ```
 
-Then your program should return:
+Should produce output like this:
 
 ```
 Foo     1,1
-Bar     1,5; 2,1
-Test    2,5
+bar     1,5; 2,1
+test    2,5
 ```
 
 ## What we have
@@ -53,6 +53,34 @@ we have a pytest environment (you need a [pytest installed](https://docs.pytest.
 ```
 python3 -m pytest
 ```
+
+## How to start
+
+You may use either `poetry` or `venv`.
+
+### VENV
+
+It is preinstalled with Python3.
+
+```shell
+> python3 -m venv book_index_venv
+> source book_index_venv/bin/activate
+> pip install -r requirements.txt
+> python setup.py install
+> pytest
+```
+
+### Poetry
+
+Needs to be installed, isntructions here https://python-poetry.org/docs/#installation
+
+Then you can
+```
+> poetry install
+> poetry shell
+> pytest
+```
+
 
 ## Proposed steps to achieve the goal
 
