@@ -12,7 +12,8 @@ def do_it(stream: TextIOBase, format_: str = "text"):
     print("your text has", len(txt), "lines")
     print("format is", format_)
     result = find_all_words_in_text_with_char_parser(txt)
-    print(result)
+    for key, value in result.items():
+        print(f"{key}: {value}")
     return result
 
 
