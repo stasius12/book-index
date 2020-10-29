@@ -1,5 +1,3 @@
-from io import StringIO
-
 import pytest
 
 from book_index.index import (
@@ -25,3 +23,11 @@ from book_index.index import (
 )
 def test_find_all_words_in_text_with_char_parser(txt: list, result: dict):
     assert find_all_words_in_text_with_char_parser(txt) == result
+
+
+def test_doit():
+    assert find_all_words_in_text_with_char_parser(["Foo bar", "bar test"]) == {
+        "Foo": [(1, 1)],
+        "bar": [(1, 5), (2, 1)],
+        "test": [(2, 5)],
+    }
