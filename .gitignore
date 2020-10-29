@@ -5,3 +5,4 @@ dist
 build
 book_index.egg*
 .vscode
+.idea
