@@ -5,7 +5,8 @@ description = ""
 authors = ["Coding Dojo Silesia"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.8"
+pre-commit = "^2.8.1"
 
 [tool.poetry.dev-dependencies]
 importlib-metadata = "2.0.0"
